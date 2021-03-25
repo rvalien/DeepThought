@@ -3,9 +3,9 @@ this bot made with love
 """
 
 __author__ = "Valien"
-__version__ = "0.0.11"
+__version__ = "0.0.01"
 __maintainer__ = "Valien"
-__link__ = "https://github.com/rvalien/"
+__link__ = "https://github.com/rvalien/DeepThought"
 
 import discord
 import os
@@ -18,7 +18,7 @@ INITIAL_EXTENSIONS = [
     "cogs.bso",
     # "cogs.listeners",
     "cogs.commands",
-    # "cogs.games"
+    "cogs.games"
 ]
 token = os.environ["TOKEN"]
 prefix = os.environ["PREFIX"]
@@ -30,7 +30,7 @@ logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 logger.info("run")
 
-bot = commands.Bot(command_prefix=prefix, intents=intents, description="Small bot for lil QC community")
+bot = commands.Bot(command_prefix=prefix, intents=intents, description="Small bot with small Thought")
 
 
 @bot.event
