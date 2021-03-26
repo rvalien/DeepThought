@@ -11,7 +11,7 @@ VOTE_REACT = {"yes": "✅", "no": "❌", "time": "🔟", "half_time": "5️⃣",
 VOTE_TIME = 10
 
 logger = logging.getLogger(__name__)
-BSO ={"ingos": {"series": "РРР", "range": range(5050110021, 5050110041)},}
+BSO = {"ingos": {"series": "РРР", "range": iter(range(5050110021, 5050110041))},}
 
 class Commands(commands.Cog):
     def __init__(self, bot):
